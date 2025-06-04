@@ -1,0 +1,212 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.aqua {
+    background: linear-gradient(to right, #0000ff, #3399ff, #66ccff);
+    color: white;
+    width: 100%;
+}
+
+.aqua__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.aqua__title h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    margin: 6px 0;
+}
+
+.aqua__title h2 {
+    font-size: clamp(14px, 3vw, 18px);
+    margin-bottom: 15px;
+}
+
+
+.aqua__menu {
+    background-color: #0000ff;
+    padding: 10px 0;
+}
+
+.aqua__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aqua__nav-list li {
+    margin: 5px;
+}
+
+.aqua__nav-list a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 1px solid black;
+    padding: 8px 12px;
+    background-color: #3399ff;
+    border-radius: 25px;
+    display: block;
+    transition: background-color 0.3s;
+    font-size: clamp(12px, 2vw, 16px);
+}
+
+.aqua__nav-list a:hover {
+    background-color: #66ccff;
+}
+
+
+.card {
+    color: white;
+    position: relative;
+    flex: 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    max-height: 700px;
+    object-fit: cover;
+    display: block;
+}
+
+.card__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    background: linear-gradient(to right, #0000ff65, #3399ff71, #66ccff8d);
+    box-sizing: border-box;
+
+}
+.card__information {
+    position: relative;
+}
+
+.card__container-title {
+    text-align: center;
+    margin-top: 0;
+    font-size: clamp(20px, 4vw, 28px);
+}
+
+.card__container p {
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.5;
+}
+
+
+footer {
+    background: linear-gradient(to right, #0c0cde, #3399ffcc, #139ee4cd);
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+.contacts__title {
+    font-size: clamp(18px, 4vw, 24px);
+}
+
+.contacts__information p {
+    font-size: clamp(14px, 2vw, 16px);
+    margin: 10px 0;
+}
+
+.contacts__line {
+    width: 80%;
+    max-width: 800px;
+    height: 3px;
+    background: linear-gradient(to right, #0000ff, #3399ff, #66ccff);
+    margin: 10px auto;
+}
+
+.contacts__icons img {
+    margin: 10px;
+    max-width: 120px;
+    height: auto;
+}
+.contacts__map {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.contacts__map h2 {
+    font-size: clamp(18px, 4vw, 24px);
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    
+    .nav-list li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-list a {
+        padding: 8px;
+        white-space: normal;
+    }
+    .hero-image {
+        height: 50vh;
+        max-height: none;
+        object-fit: cover;
+    }
+
+    .card__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        padding: 15px;
+        border-radius: 20px;
+        background: linear-gradient(to right, #0000ff65, #3399ff71, #66ccff8d);
+        box-sizing: border-box;
+        font-size: clamp(14px, 2vw, 16px);
+    }
+
+}
+
+@media (max-width: 400px) {
+    .aqua__title h1 {
+        font-size: 24px;
+    }
+    
+    .aqua__title h2 {
+        font-size: 14px;
+    }
+    
+    .contacts__icons img {
+        max-width: 100px;
+    }
+}
