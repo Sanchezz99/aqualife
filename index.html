@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | AquaLife</title>
+    <link rel="stylesheet" href="css/project_page1.css">
+</head>
+<body>
+    <header class="aqua">
+        <div class="aqua__title">
+            <h1>AQUALIFE</h1>
+            <h2>♒︎ Ключ к глубинам неизвестного ♒︎</h2>
+        </div>
+        <nav class="aqua__menu">
+            <ul class="aqua__nav-list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="fishs.html">Рыбы</a></li>
+                <li><a href="mle.html">Млекопитающие</a></li>
+                <li><a href="bes.html">Беспозвоночные</a></li>
+                <li><a href="rak.html">Ракообразные</a></li>
+                <li><a href="rept.html">Рептилии</a></li>
+                <li><a href="contacts.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="card">
+        <div class="card__information">
+            <img src="/images/fishs.jpg" alt="Рыбы в океане" class="hero-image">
+            <div class="card__container">
+                <h1 class="card__container-title">Краткое описание</h1>
+                <p>Добро пожаловать в AQUALIFE –
+                самый полный онлайн-гид по удивительным обитателям морей и океанов! 🌊🐠 </p>
+                <p>Наш сайт создан для всех, кто влюблен в подводный мир:<br>
+                ✔ Любители природы узнают интересные факты о рыбах,
+                китах, осьминогах и других морских существах.<br>
+                ✔ Студенты и ученые найдут достоверные данные о биологии, ареалах и экологии видов.</p>
+                <p>Что вас ждет в AQUALIFE?<br>
+                ✔ Каталог видов с детальными описаниями и фото.<br>
+                ✔ Актуальные новости из мира морской биологии.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.addEventListener('load', function() {
+            // Создаем элемент для приветствия
+            const welcomeDiv = document.createElement('div');
+            welcomeDiv.textContent = 'Добро пожаловать на сайт AQUALIFE! Погрузитесь в удивительный мир океанов 🌊';
+            welcomeDiv.style.position = 'fixed';
+            welcomeDiv.style.top = '20px';
+            welcomeDiv.style.left = '50%';
+            welcomeDiv.style.transform = 'translateX(-50%)';
+            welcomeDiv.style.backgroundColor = '#0077be';
+            welcomeDiv.style.color = 'white';
+            welcomeDiv.style.padding = '15px 25px';
+            welcomeDiv.style.borderRadius = '10px';
+            welcomeDiv.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            welcomeDiv.style.fontSize = '18px';
+            welcomeDiv.style.zIndex = '1000';
+            welcomeDiv.style.fontFamily = 'Arial, sans-serif';
+
+            document.body.appendChild(welcomeDiv);
+
+            // Автоматически скрыть сообщение через 5 секунд
+            setTimeout(() => {
+                welcomeDiv.style.transition = 'opacity 0.8s';
+                welcomeDiv.style.opacity = '0';
+                setTimeout(() => welcomeDiv.remove(), 800);
+            }, 5000);
+        });
+    </script>
+    <footer id="contacts">
+        <div class="contacts__line"></div>
+        <div class="contacts__information">
+            <h1 class="contacts__title">Контактная информация</h1>
+            <p>Электронная почта - example@mail.ru</p>
+            <p>Номер телефона - + 7 (999) 999-99-99</p>
+        <div class="contacts__line"></div>
+        <div class="contacts__map">
+            <h2>Наш офис на карте</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.1234567890123!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab123456789ab%3A0x123456789abcdef0!2z0JrQsNGA0LXQvdC40Y8g0JrQsNGA0LXQvdC40Y8!5e0!3m2!1sru!2sru!4v1685400000000!5m2!1sru!2sru"
+            width="100%"
+            height="250"
+            style="border:0; border-radius: 15px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+            <div class="contacts__line"></div>
+            <div class="contacts__icons">
+                <img src="/images/apps.png" alt="App Store">
+                <img src="/images/google.png" alt="Google Play">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
